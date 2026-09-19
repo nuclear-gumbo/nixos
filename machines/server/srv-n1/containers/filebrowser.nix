@@ -23,7 +23,7 @@
         auth:
           methods:
             password:
-              enabled: true
+              enabled: false
             oidc:
               enabled: true
               issuerUrl: "https://id.senseii.dev"
