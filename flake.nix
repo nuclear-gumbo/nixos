@@ -248,6 +248,10 @@
         mongoose = mkServer {
           deviceModule = ./machines/lxc/mongoose/default.nix;
         };
+
+        filebrowser = mkServer {
+          deviceModule = ./machines/lxc/filebrowser/default.nix;
+        };
       };
     };
 }

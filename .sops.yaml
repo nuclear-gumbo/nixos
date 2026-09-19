@@ -12,6 +12,7 @@ keys:
   - &mongoose age18sldhysg5dyzm6fr6c00ef5nsyh5np5rm5tf88lupd5z66zeeppqy8yutj
   - &aliased age1r8cgqhrlu8xkywddf3663yuuuml5rdfsgrhsa7hgkzsfk5ejvyjqxsykdd
   - &wazuh age1rfpjxx3g876g8k0kvlntgnc5lttk52whvfga8sfxh6zcf7p8w9nqyxvtk0
+  - &filebrowser age100lvh3gnafupwdwtdnwn2fllfe8lfxxtye8hhd9dcfl0kdnw2fhsqsdssg
 
 creation_rules:
   # sops matches top to bottom, secrets always start with "host."
@@ -46,6 +47,9 @@ creation_rules:
   - path_regex: secrets/wazuh\.
     key_groups:
       - age: [*yubi-master1, *yubi-master2, *yubi-master3, *wazuh]
+  - path_regex: secrets/filebrowser\.
+    key_groups:
+      - age: [*yubi-master1, *yubi-master2, *yubi-master3, *filebrowser]
 
   - path_regex: secrets/.*
     key_groups:

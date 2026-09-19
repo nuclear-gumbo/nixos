@@ -17,7 +17,6 @@
     ./anubis.nix
     ./searxng.nix
     ./obsidian.nix
-    ./filebrowser.nix
    # ./owntracks.nix
   ];
 }
