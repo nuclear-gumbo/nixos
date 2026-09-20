@@ -143,7 +143,7 @@
         settings.containers.containers.base_hosts_file = "none";
 
         containers.gerbil = {
-          image = "docker.io/fosrl/gerbil@sha256:6cde03ff29bfc2d3d307b09431afe280ff7437960ad470b9e770ba4ad006b794";
+          image = "docker.io/fosrl/gerbil@sha256:4d34b911fa1a68805e836d97778edd54a9ee692400ba0e49001cd78119804afb";
           autoStart = true;
           exec = "--reachableAt=http://gerbil:3004 --generateAndSaveKeyTo=/var/config/key --remoteConfig=http://pangolin:3001/api/v1/";
           ports = [
@@ -195,7 +195,7 @@
         };
 
         containers.traefik = {
-          image = "docker.io/library/traefik:v3.7@sha256:f86a2cab1b5c649070c49f883c743dd32d8485a56e3368c5f93b9e91f1e91259";
+          image = "docker.io/library/traefik:v3.7@sha256:1c32e7c368204fd72812152ebdd2ac0425993df6fd982317deb02e48f2d5423c";
           autoStart = true;
           network = "container:gerbil";
           exec = "--configFile=/etc/traefik/traefik_config.yml";
@@ -267,7 +267,7 @@
         };
 
         containers.crowdsec-export = {
-          image = "docker.io/library/python:3.14-alpine@sha256:c6ead215bfd31f1e433d968853b7a769989117115b728874824e6c0a27cb96fc";
+          image = "docker.io/library/python:3.14-alpine@sha256:016508ba505da24f7139765bc4bb669df4e88eb2f12eeadd571bf2f88d7533df";
           autoStart = true;
           network = "container:gerbil";
           exec = "python3 /app/lapi-export.py";

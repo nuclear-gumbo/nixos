@@ -49,6 +49,7 @@ Current outputs:
 | `runner`       | LXC         | Forgejo Actions runner and Harmonia binary cache                       |
 | `second-brain` | LXC         | second-brain service, consumed as a flake input                        |
 | `mongoose`     | LXC         | qBittorrent behind WireGuard, ZFS dataset passed through from the host |
+| `filebrowser`  | LXC         | FileBrowser Quantum over the nas datasets and scratch disks            |
 
 `erebos` (desktop) and `prometheus` (laptop) are defined but currently commented out, as is a five-node k3s cluster. Anything commented out is not being actively developed or maintained.
 
