@@ -17,6 +17,7 @@ let
     "caddy"
     "searxng"
     "obsidian"
+    "radicale"
   #  "owntracks"
   ];
 in

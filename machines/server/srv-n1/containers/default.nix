@@ -17,6 +17,7 @@
     ./anubis.nix
     ./searxng.nix
     ./obsidian.nix
+    ./radicale.nix
    # ./owntracks.nix
   ];
 }
