@@ -23,7 +23,7 @@
             DropCapability = "ALL";
             NoNewPrivileges = true;
           }
-          Servive = {
+          Service = {
             Restart = "on-failure";
             TimeoutStartSec = 900;
           };
