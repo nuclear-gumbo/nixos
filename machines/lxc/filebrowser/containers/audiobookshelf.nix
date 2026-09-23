@@ -10,7 +10,10 @@
       containers.audiobookshelf = {
         image = "ghcr.io/advplyr/audiobookshelf:2.36.1@sha256:3528a93b6442ffe54bd46771bbbab7c97084e1101071586d9dc2254f30bb4358";
         autoStart = true;
-        ports = [ "127.0.0.1:13378:80" ];
+        ports = [ "127.0.0.1:13378:13378" ];
+        environment = {
+          PORT = 13378
+        };
         volumes = [
           "/srv/media/audiobooks:/audiobooks:Z"
           "/srv/media/books:/books:Z"
