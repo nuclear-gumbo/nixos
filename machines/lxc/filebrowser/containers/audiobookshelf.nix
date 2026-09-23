@@ -26,8 +26,8 @@
           Servive = {
             Restart = "on-failure";
             TimeoutStartSec = 900;
-          }
-        }
+          };
+        };
       };
     };
   };
