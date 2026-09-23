@@ -156,11 +156,11 @@
     },
     "flatpaks": {
       "locked": {
-        "lastModified": 1786455112,
-        "narHash": "sha256-rwDASpAiEERXivdevBH4QXyhRHgBPp2c/Av4QXtFKMM=",
+        "lastModified": 1790158358,
+        "narHash": "sha256-+PifPG52GHX4uuzgPw5n1WEQ7L8aLpcc8QG+rQR5KBA=",
         "owner": "in-a-dil-emma",
         "repo": "declarative-flatpak",
-        "rev": "a1173e04ef4e192960d724a9ad806bba25b5767e",
+        "rev": "6f24f3ac7dce9a9a5fbb6a9181dddf0fd8bcf7c4",
         "type": "github"
       },
       "original": {
