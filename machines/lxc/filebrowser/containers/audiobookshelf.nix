@@ -12,7 +12,7 @@
         autoStart = true;
         ports = [ "127.0.0.1:13378:13378" ];
         environment = {
-          PORT = 13378
+          PORT = 13378;
         };
         volumes = [
           "/srv/media/audiobooks:/audiobooks:Z"
