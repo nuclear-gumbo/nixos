@@ -22,7 +22,7 @@
           Container = {
             DropCapability = "ALL";
             NoNewPrivileges = true;
-          }
+          };
           Service = {
             Restart = "on-failure";
             TimeoutStartSec = 900;
