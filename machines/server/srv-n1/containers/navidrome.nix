@@ -5,7 +5,7 @@
     services.podman = {
       enable = true;
       containers.navidrome = {
-        image = "docker.io/deluan/navidrome:0.64.1@sha256:df22d661b8d0322c33754d999b567150df9e131a47ae53be71fed0154bf8cef5";
+        image = "docker.io/deluan/navidrome:0.64.2@sha256:38dc2727bfcfd5ede290f8ada114fc90368146f265ae4701ddddbcbe2a44ee52";
         autoStart = true;
         ports = [ "127.0.0.1:4533:4533" ];
         volumes = [
