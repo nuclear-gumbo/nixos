@@ -33,6 +33,7 @@
       pkiBundle = "/var/lib/sbctl";
       autoGenerateKeys.enable = true;
       autoEnrollKeys.enable = true;
+      configurationLimit = 4;
       measuredBoot = {
         enable = true;
         pcrs = [
