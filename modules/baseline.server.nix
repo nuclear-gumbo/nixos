@@ -77,12 +77,12 @@ in
       eza
       vim
       python3
-      vnstat
     ];
 
     services = {
       tailscale.enable = true;
       qemuGuest.enable = true;
+      vnstat.enable=true;
     };
 
     system.stateVersion = "25.05";
