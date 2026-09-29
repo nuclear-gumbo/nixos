@@ -5,7 +5,7 @@
     services.podman = {
       enable = true;
       containers.newt = {
-        image = "docker.io/fosrl/newt:1.17@sha256:3465d85200cceb0f46dad8e63a40b69ec043a81df66ed0c514714302e9b83dde";
+        image = "docker.io/fosrl/newt:1.18@sha256:07507a530f3f239bee4dc208aabdd25095df650f132e926245659e1a67aa5de9";
         autoStart = true;
         environmentFile = [ "/run/secrets/newt.env" ];
         devices = [ "/dev/net/tun" ];
