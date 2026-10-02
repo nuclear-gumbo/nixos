@@ -8,7 +8,7 @@
         enable = true;
 
         containers.newt = {
-          image = "docker.io/fosrl/newt:1.18@sha256:07507a530f3f239bee4dc208aabdd25095df650f132e926245659e1a67aa5de9";
+          image = "docker.io/fosrl/newt:1.18@sha256:7fed6605e0a104a337e1cb903bbb1225f80c7f6e5e56ff1eb1d70c57740d8e0f";
           autoStart = true;
           environmentFile = [ "/run/secrets/newt.env" ];
           devices = [ "/dev/net/tun" ];
