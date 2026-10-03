@@ -22,7 +22,7 @@
       services.podman = {
         enable = true;
         containers.caddy = {
-          image = "ghcr.io/caddybuilds/caddy-cloudflare:2.11@sha256:62639363ceb043393da9c3895d7c97a9a49ccf840bea0cc7e6479465d12ade96";
+          image = "ghcr.io/caddybuilds/caddy-cloudflare:2.11@sha256:3d6e5b2dd1dba7c921f0965b181a2dc0bfea4a9183e72638db186c22a277bbea";
           autoStart = true;
           ports = [ "100.69.69.210:8443:8443" ];
           extraPodmanArgs = [ "--network=pasta:--map-host-loopback,169.254.1.2" ];
