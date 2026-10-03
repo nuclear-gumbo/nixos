@@ -77,6 +77,7 @@ in
       eza
       vim
       python3
+      rclone
     ];
 
     services = {
