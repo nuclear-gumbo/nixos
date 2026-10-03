@@ -52,7 +52,7 @@
         };
 
         containers.technitium = {
-          image = "docker.io/technitium/dns-server:15.5.1@sha256:b8efe03a5e3bdc6e9d2baff3f6e70c382c7f98afa2a7ca66f318d4b58a8d5944";
+          image = "docker.io/technitium/dns-server:15.6.0@sha256:1045db38fd2f2e4d9578f9168b7eb4862575469ed0ffc79e03f36bdc772a93b5";
           autoStart = true;
           network = "container:technitium-ts";
           volumes = [
