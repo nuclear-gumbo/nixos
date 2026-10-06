@@ -8,7 +8,7 @@
       networks.obsidian = { };
 
       containers.couchdb = {
-        image = "docker.io/library/couchdb:3.5@sha256:8cf5f8442585c346d2717ff0ad95605731d2f19f67b8367840baa8d3b24ebc31";
+        image = "docker.io/library/couchdb:3.5@sha256:5fc596110eac7f412173a7d9de14f70aa5d3e816790fb6e70642755d4a4cf464";
         autoStart = true;
         network = "obsidian.network";
         networkAlias = [ "couchdb" ];
