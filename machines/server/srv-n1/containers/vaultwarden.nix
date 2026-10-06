@@ -5,7 +5,7 @@
     services.podman = {
       enable = true;
       containers.vaultwarden = {
-        image = "docker.io/vaultwarden/server:1.37.3@sha256:1587c45feaa479f1f5e8af3b00eded36bff77bcf1880cf8dbf0541706dd470e0";
+        image = "docker.io/vaultwarden/server:1.37.4@sha256:efb3cde962015fcc036b2ea625242248611943b27212ebf4392841fb30fad055";
         autoStart = true;
         ports = [ "127.0.0.1:8000:8000" ];
         volumes = [ "/var/lib/vaultwarden/data:/data:Z" ];
