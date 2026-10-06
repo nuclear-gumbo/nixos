@@ -52,7 +52,7 @@
         };
 
         containers.caddy = {
-          image = "docker.io/library/caddy:2.11@sha256:8dc9fa87b36b25303d1c67d2a09f5824b7f3bfd72cb052f246e5da2133fe29a8";
+          image = "docker.io/library/caddy:2.11@sha256:f2a1290d0463aad60660d4ec134943f183ee2a5f6c3eb7bf32dd984f2f020772";
           autoStart = true;
           network = "owntracks.network";
           networkAlias = [ "caddy" ];
