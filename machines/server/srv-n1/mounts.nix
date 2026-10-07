@@ -1,6 +1,6 @@
 {
   fileSystems."/mnt/manga" = {
-    device = "192.168.0.2:/mediapool/media/manga";
+    device = "10.10.1.100:/mediapool/media/manga";
     fsType = "nfs";
     options = [
       "noatime"
@@ -8,7 +8,7 @@
     ];
   };
   fileSystems."/mnt/photos" = {
-    device = "192.168.0.2:/mediapool/media/photos";
+    device = "10.10.1.100:/mediapool/media/photos";
     fsType = "nfs";
     options = [
       "noatime"
@@ -16,7 +16,7 @@
     ];
   };
   fileSystems."/mnt/music" = {
-    device = "192.168.0.2:/mediapool/media/music/lossless";
+    device = "10.10.1.100:/mediapool/media/music/lossless";
     fsType = "nfs";
     options = [
       "noatime"
