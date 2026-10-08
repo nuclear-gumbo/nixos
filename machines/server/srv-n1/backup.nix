@@ -24,7 +24,7 @@
     wants = [ "network-online.target" ];
 
     environment = {
-      PBS_REPOSITORY = "servers@pbs!srv-n1@192.168.0.216:backup";
+      PBS_REPOSITORY = "servers@pbs!srv-n1@10.10.1.99:backup";
       PBS_FINGERPRINT = "8c:93:31:12:89:30:25:95:d5:93:c5:e5:da:f1:c2:88:55:bc:e1:83:4f:ca:b1:26:5c:dd:52:9f:b6:a1:b4:18";
     };
 
