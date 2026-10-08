@@ -8,7 +8,7 @@
       networks.immich-public = { };
 
       containers.immich-public-server = {
-        image = "ghcr.io/immich-app/immich-server:v3@sha256:d317916b28090c33eb36b308464ea391f8b7df1d850fcfea227a39ec879718c2";
+        image = "ghcr.io/immich-app/immich-server:v3@sha256:db996e352359771c6a3db121a0ed8761516b22f727fc092a0f46dcfef82c1bc1";
         autoStart = true;
         network = "immich-public.network";
         ports = [ "127.0.0.1:2284:2283" ];
