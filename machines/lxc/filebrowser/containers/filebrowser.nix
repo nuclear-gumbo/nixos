@@ -62,7 +62,7 @@
       services.podman = {
         enable = true;
         containers.filebrowser = {
-          image = "ghcr.io/gtsteffaniak/filebrowser:1.5.8-stable@sha256:68455d4953bad8e984e1bc5d112ed1e9c918a0a04f104c13c9ece50790308894";
+          image = "ghcr.io/gtsteffaniak/filebrowser:2.0.0-stable@sha256:9d42f635e32913d7daf05259428b6c70061cfdca3affc9602b4c31717e0a4bae";
           autoStart = true;
           ports = [ "127.0.0.1:8080:8080" ];
           userNS = "keep-id:uid=1000,gid=1000";
