@@ -20,7 +20,7 @@
         max_request_size = "100 MiB"
       '';
 
-      image = "ghcr.io/matrix-construct/tuwunel:v1.9.3@sha256:678b7f5350e06a41614444497c587da9dddf66767e4068a27480402f3c1367d0";
+      image = "ghcr.io/matrix-construct/tuwunel:v1.9.4@sha256:0e86c6164d6c9f5b60291938eb61ad8395021c37fe58d47a963ea7edddbedaec";
 
       hardening = {
         Container = {
