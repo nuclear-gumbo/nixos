@@ -40,10 +40,12 @@
               config:
                 defaultEnabled: true
           database:
-            migrateFrom: "default"
+            path: /home/filebrowser/data/filebrowser.sqlite
+            migrateFrom: "database.db.old"
         http:
           port: 8080
           baseURL: "/"
+          trustProxyHeaders: true
         auth:
           methods:
             password:
