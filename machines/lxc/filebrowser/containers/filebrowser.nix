@@ -17,37 +17,33 @@
       # kept out of the data dir, filebrowser pulls every *-config.yaml beside it
       settings = pkgs.writeText "config.yaml" ''
         server:
-          cacheDir: /home/filebrowser/data/tmp
-          port: 8080
-          baseURL: "/"
+          cacheDir: "/home/filebrowser/data/tmp"
           sources:
-            - path: /home/filebrowser/data/files
+            - path: "/home/filebrowser/data/files"
               name: "home"
               config:
                 defaultEnabled: true
-            - path: /srv/media
+            - path: "/srv/media"
               name: "media"
               config:
                 defaultEnabled: true
-            - path: /srv/p2p
+            - path: "/srv/p2p"
               name: "p2p"
               config:
                 defaultEnabled: true
-            - path: /srv/scratch
+            - path: "/srv/scratch"
               name: "scratch"
               config:
                 defaultEnabled: true
-            - path: /srv/scratch_2
+            - path: "/srv/scratch_2"
               name: "scratch_2"
               config:
                 defaultEnabled: true
-        userDefaults:
-          account:
-            permissions:
-              modify: true
-              create: true
-              delete: true
-              share: true
+          database:
+            migrateFrom: "default"
+        http:
+          port: 8080
+          baseURL: "/"
         auth:
           methods:
             password:
@@ -56,6 +52,11 @@
               enabled: true
               issuerUrl: "https://id.senseii.dev"
               userIdentifier: "preferred_username"
+        userDefaults:
+          account:
+            permissions:
+              share: true
+
       '';
     in
     {
