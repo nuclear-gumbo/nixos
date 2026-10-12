@@ -41,7 +41,6 @@
                 defaultEnabled: true
           database:
             path: /home/filebrowser/data/filebrowser.sqlite
-            migrateFrom: "/home/filebrowser/data/database.db.old"
         http:
           port: 8080
           baseURL: "/"
