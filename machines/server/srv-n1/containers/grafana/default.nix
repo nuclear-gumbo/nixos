@@ -141,7 +141,7 @@
         };
 
         containers.grafana = {
-          image = "docker.io/grafana/grafana@sha256:b28bae15e219c998fb0e0424ed724930cc61b1f61fb404d47c862f9a23f9e572";
+          image = "docker.io/grafana/grafana@sha256:dbbc38ea21103cefb50396340cd88afec779c7e070b0a7bf5a75b4ce46651d3f";
           autoStart = true;
           network = "monitoring.network";
           ports = [ "127.0.0.1:3030:3000" ];
