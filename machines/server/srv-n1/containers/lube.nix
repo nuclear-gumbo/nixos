@@ -5,7 +5,7 @@
     services.podman = {
       enable = true;
       containers.lubelogger = {
-        image = "ghcr.io/hargata/lubelogger:v1.7.3@sha256:c9d2bbb48c7f84d90e54496e2cd60422e56a5f2345c8a539ebe09f77e629d321";
+        image = "ghcr.io/hargata/lubelogger:v1.7.4@sha256:483a9d7582c4e6258615fd822b3de4193b4fcc4230d0a92432c6d407faf75af2";
         autoStart = true;
         ports = [ "127.0.0.1:8081:8080" ];
         volumes = [
