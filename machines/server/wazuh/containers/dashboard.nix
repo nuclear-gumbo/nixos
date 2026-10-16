@@ -28,7 +28,7 @@
         };
 
         containers.wazuh-dashboard = {
-          image = "docker.io/wazuh/wazuh-dashboard:4.14.9@sha256:5230e95b3deecb7fa4ae7768d88fb03c660bf3c81f1732042a5439d1c3d3c760";
+          image = "docker.io/wazuh/wazuh-dashboard:4.14.9@sha256:e8e2340265feb6f61711d2ba460d04d2dea875ee46de26cd1832da2a3558a341";
           autoStart = true;
           network = "wazuh.network";
           networkAlias = [ "wazuh.dashboard" ];
