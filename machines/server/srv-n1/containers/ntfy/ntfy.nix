@@ -13,6 +13,7 @@
         volumes = [
           "/var/lib/ntfy/cache:/var/cache/ntfy"
           "/var/lib/ntfy/etc:/etc/ntfy"
+          "/var/lib/ntfy/data:/var/lib/ntfy"
         ];
         extraConfig = {
           Container = {
