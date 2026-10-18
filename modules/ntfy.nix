@@ -14,7 +14,7 @@ let
     path = [ pkgs.curl ];
     serviceConfig = {
       Type = "oneshot";
-      EnvironmentFile = config.sops.secrets."ntfy.env".path;
+      EnvironmentFile = config.sops.secrets."ntfy-alerts.env".path;
     };
     script = ''
       send() {
@@ -40,7 +40,7 @@ in
 
   config = lib.mkMerge [
     (lib.mkIf (cfg.enable || cfg.backups.enable) {
-      sops.secrets."ntfy.env" = {
+      sops.secrets."ntfy-alerts.env" = {
         sopsFile = ../secrets/ntfy.env;
         format = "binary";
         owner = "root";
