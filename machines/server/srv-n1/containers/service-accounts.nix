@@ -18,6 +18,7 @@ let
     "searxng"
     "obsidian"
     "radicale"
+    "ntfy"
   #  "owntracks"
   ];
 in
