@@ -89,6 +89,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             { nixpkgs.overlays = overlays; }
+            ./modules/ntfy.nix
             deviceModule
           ]
           ++ modules

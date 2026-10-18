@@ -51,6 +51,10 @@ creation_rules:
     key_groups:
       - age: [*yubi-master1, *yubi-master2, *yubi-master3, *filebrowser]
 
+  - path_regex: secrets/ntfy\.
+    key_groups:
+      - age: [*yubi-master1, *yubi-master2, *yubi-master3, *console, *srv-n1, *srv-n2, *srv-n3, *pangolin, *jellyfin, *runner, *mongoose, *aliased, *wazuh, *filebrowser]
+
   - path_regex: secrets/.*
     key_groups:
       - age: [*yubi-master1, *yubi-master2, *yubi-master3]

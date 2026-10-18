@@ -9,6 +9,8 @@
   networking.hostName = "second-brain";
 
   server.cache.enable = true;
+  # no sops key on this host
+  ntfy.enable = false;
 
   services.second-brain = {
     enable = true;

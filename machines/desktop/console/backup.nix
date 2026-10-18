@@ -10,6 +10,8 @@
 
   environment.systemPackages = [ pkgs.proxmox-backup-client ];
 
+  ntfy.backups.enable = true;
+
   systemd.services.pbs-backup = {
     description = "Proxmox Backup Server backup";
     after = [ "network-online.target" ];

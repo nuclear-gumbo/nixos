@@ -13,6 +13,7 @@ in
   config = lib.mkIf cfg.enable {
     svc.enable = lib.mkDefault true;
     server.dns.enable = lib.mkDefault true;
+    ntfy.enable = lib.mkDefault true;
 
     nix.settings.experimental-features = [
       "nix-command"
