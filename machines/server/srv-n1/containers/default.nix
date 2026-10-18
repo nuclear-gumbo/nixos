@@ -18,7 +18,7 @@
     ./searxng.nix
     ./obsidian.nix
     ./radicale.nix
-    ./ntfy
+    ./ntfy/ntfy.nix
    # ./owntracks.nix
   ];
 }
