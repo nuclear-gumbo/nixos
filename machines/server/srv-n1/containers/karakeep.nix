@@ -22,6 +22,7 @@
         extraPodmanArgs = [ "--memory=3g" ];
         extraConfig = {
           Container = {
+            AddCapability = "CHOWN SETGID SETUID";
             DropCapability = "ALL";
             NoNewPrivileges = true;
           };
@@ -40,11 +41,11 @@
       };
 
       containers.karakeep-chrome = {
-        image = "gcr.io/zenika-hub/alpine-chrome:124@sha256:1a0046448e0bb6c275c88f86e01faf0de62b02ec8572901256ada0a8c08be23f";
+        image = "ghcr.io/karakeep-app/karakeep-chrome:latest@sha256:c51a8c8e6c3c1040a50fa0ecfd0b2fc298401b4229262636552458151f6f18fa";
         autoStart = true;
         network = "karakeep.network";
         networkAlias = [ "chrome" ];
-        exec = "--no-sandbox --disable-gpu --disable-dev-shm-usage --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --hide-scrollbars";
+        exec = "--no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --disable-blink-features=AutomationControlled --window-size=1440,900";
         extraConfig = {
           Container = {
             DropCapability = "ALL";
