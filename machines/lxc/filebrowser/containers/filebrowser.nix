@@ -31,10 +31,6 @@
               name: "p2p"
               config:
                 defaultEnabled: true
-            - path: "/srv/scratch"
-              name: "scratch"
-              config:
-                defaultEnabled: true
             - path: "/srv/scratch_2"
               name: "scratch_2"
               config:
