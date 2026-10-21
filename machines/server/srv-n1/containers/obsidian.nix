@@ -30,7 +30,7 @@
       };
 
       containers.cloudflared = {
-        image = "docker.io/cloudflare/cloudflared:2026.10.2@sha256:0e56c13c7058fcef9c4f0e7d83372f82330548dbf8f8b366f3d8b506526d93b2";
+        image = "docker.io/cloudflare/cloudflared:2026.10.3@sha256:faa8e0a1475f137c910be6025f43c8e4092fdd35461b31e19fd1390657a1ff39";
         autoStart = true;
         network = "obsidian.network";
         exec = "tunnel --no-autoupdate run";
