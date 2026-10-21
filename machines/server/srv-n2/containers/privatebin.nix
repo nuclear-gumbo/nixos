@@ -6,7 +6,7 @@
         [main]
         name = "pasted.space"
         basepath = "https://pasted.space/"
-        discussion = false
+        discussion = true
         opendiscussion = false
         password = true
         fileupload = false
