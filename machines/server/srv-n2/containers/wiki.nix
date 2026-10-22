@@ -58,7 +58,7 @@ in
         enable = true;
 
         containers.wiki = {
-          image = "docker.io/library/nginx:1.31-alpine@sha256:892bb2152464f0c5d8972593a5f5afaf8054552580b699d95f8ff4af08c2d33d";
+          image = "docker.io/library/nginx:1.31-alpine@sha256:060849a174666c53439dc7cecbf8f67e225c7cbfb1a44ca97915d9a172a81e6d";
           autoStart = true;
           ports = [ "127.0.0.1:8088:8088" ];
           exec = "-g \"daemon off;\"";
