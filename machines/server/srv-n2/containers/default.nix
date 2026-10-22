@@ -4,7 +4,7 @@
     ./traefik.nix
     ./anubis.nix
     ./searxng.nix
-    ./privatebin.nix
+    #./privatebin.nix
     ./crowdsec.nix
     ./tuwunel.nix
     ./outage.nix
