@@ -78,7 +78,7 @@
         };
 
         containers.forgejo-db = {
-          image = "docker.io/library/postgres:17-alpine@sha256:1bcc18d81671b02906296aad470ec9778a6b71016ce953092024b680bad007b0";
+          image = "docker.io/library/postgres:17-alpine@sha256:eee6c6e1b0894fa4fe0075eb054af9fd1cf39a35321c2d4110626cfe506411fb";
           autoStart = true;
           network = "forgejo.network";
           networkAlias = [ "forgejo-db" ];
