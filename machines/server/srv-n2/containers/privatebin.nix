@@ -59,7 +59,7 @@
 
         containers.privatebin = {
           image = "docker.io/privatebin/nginx-fpm-alpine:2.1.0@sha256:0f80fb240c3c3073c53a82893da7c7d62f03f4e05403855b720e4371541ba412";
-          autoStart = true;
+          autoStart = false;
           userNS = "keep-id:uid=65534,gid=82";
           ports = [ "127.0.0.1:8083:8080" ];
           volumes = [
