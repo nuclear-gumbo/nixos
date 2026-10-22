@@ -49,7 +49,7 @@
           <body>
           <main>
             <h1>${host} is down.</h1>
-            <p>Please see <a href="https://${status}">${status}</a>.</p>
+            <p>Please see <a href="https://${status}">${status}</a></p>
           </main>
           </body>
           </html>
