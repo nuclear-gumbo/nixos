@@ -8,7 +8,7 @@
     services.podman = {
       enable = true;
       containers.audiobookshelf = {
-        image = "ghcr.io/advplyr/audiobookshelf:2.37.1@sha256:581d68b2a6fc7ebf58d81c878a9f387cbbc0d88ac9d37b298b9cee10168af85b";
+        image = "ghcr.io/advplyr/audiobookshelf:2.37.2@sha256:b897c33f05972fb1bf484f7487bc878fa91ec8691335c1db6e2929c3a7658efa";
         autoStart = true;
         ports = [ "127.0.0.1:13378:13378" ];
         environment = {
