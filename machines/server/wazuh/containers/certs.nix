@@ -20,7 +20,7 @@
     in
     {
       services.podman.containers.wazuh-certs = {
-        image = "docker.io/wazuh/wazuh-certs-generator:0.0.4@sha256:369b4d58509aab074b188596870c81584f7120e653d9ef83c591f0f785dcf325";
+        image = "docker.io/wazuh/wazuh-certs-generator:0.0.5@sha256:1be9f9abfb6a37ac7bd3d6d707e1b43589c2b81b23c01a46992e93832795abf9";
         autoStart = true;
         entrypoint = "/bin/bash";
         # loosen perms for userspace container
