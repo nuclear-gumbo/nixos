@@ -19,6 +19,15 @@
 
   networking.firewall.interfaces.eth0.allowedTCPPorts = [ 8080 ];
 
+  # wg-quicks tunnel sends replies to other vlans out wg0, so traffic sourced from the lan address stays on main
+  systemd.network.networks."99-ethernet-default-dhcp".routingPolicyRules = [
+    {
+      From = "10.10.1.0/24";
+      Table = "main";
+      Priority = 100;
+    }
+  ];
+
   server.killswitch = {
     enable = true;
     uid = config.users.users.gumbo.uid;
