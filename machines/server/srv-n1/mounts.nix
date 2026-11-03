@@ -23,4 +23,11 @@
       "nofail"
     ];
   };
+
+  # stop rootless container user managers before nfs unmounts and the network goes down
+  systemd.services."user@" = {
+    overrideStrategy = "asDropin";
+    wants = [ "network-online.target" ];
+    after = [ "network-online.target" "remote-fs.target" ];
+  };
 }
