@@ -16,7 +16,7 @@
       };
 
       containers.wazuh-manager = {
-        image = "docker.io/wazuh/wazuh-manager:4.14.9@sha256:9d07740f780024600101d759ddab9a4413bdcb3412ccb81dccc143b3cdc702a2";
+        image = "docker.io/wazuh/wazuh-manager:4.14.10@sha256:dcda4869e2f792e92f03bce93f85b4bdf103756ea61cfca8ba9f3eabeb05365b";
         autoStart = true;
         network = "wazuh.network";
         networkAlias = [ "wazuh.manager" ];
