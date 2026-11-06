@@ -195,7 +195,7 @@
         };
 
         containers.traefik = {
-          image = "docker.io/library/traefik:v3.7@sha256:68ae5fe5b64ca166704b746a9e8afcd385e36b3f569a5691401bf652d57b3748";
+          image = "docker.io/library/traefik:v3.7@sha256:92627e6a99f71b8e46634acea28130b9f14bec5d9887ad15161007e1b652afe1";
           autoStart = true;
           network = "container:gerbil";
           exec = "--configFile=/etc/traefik/traefik_config.yml";
