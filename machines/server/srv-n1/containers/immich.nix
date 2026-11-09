@@ -38,7 +38,7 @@
       };
 
       containers.immich-machine-learning = {
-        image = "ghcr.io/immich-app/immich-machine-learning:v3.3.5@sha256:5b28c9352c8374b8a1ed96fbdd8d6755fea6e43510ec43fdf6538aa02ea40f56";
+        image = "ghcr.io/immich-app/immich-machine-learning:v3.3.6@sha256:14367bfb374b8576ddf49abd67c5ca0190a4c7fcf6303cdad65d7f7bf1a50bc2";
         autoStart = true;
         network = "immich.network";
         networkAlias = [ "immich-machine-learning" ];
