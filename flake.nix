@@ -185,10 +185,10 @@
         #   hm = [ ./home/niri.nix ];
         # };
 
-        console = mkWorkstation {
-          deviceModule = ./machines/desktop/console/default.nix;
-          hm = [ ./home/kde.nix ];
-        };
+        # console = mkWorkstation {
+        #  deviceModule = ./machines/desktop/console/default.nix;
+        #  hm = [ ./home/kde.nix ];
+        # };
 
         srv-n1 = mkServer {
           deviceModule = ./machines/server/srv-n1/default.nix;
