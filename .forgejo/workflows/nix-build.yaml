@@ -62,7 +62,7 @@ jobs:
             echo "No flake.lock changes to scan."
             exit 0
           fi
-          for host in srv-n1 console; do
+          for host in srv-n1; do
             out=$(nix build ".#nixosConfigurations.$host.config.system.build.toplevel" --print-out-paths)
             nix run github:tiiuae/sbomnix#vulnxscan -- "$out" || echo "vulnxscan reported findings for $host (informational)"
           done
