@@ -25,7 +25,7 @@
       services.podman = {
         enable = true;
         containers.radicale = {
-          image = "ghcr.io/nuclear-gumbo/radicale:3.9.0@sha256:4e494963ef0149c8d5177dae16905606bfa9394a1eeaa094b241e7e6cbd6fa80";
+          image = "ghcr.io/nuclear-gumbo/radicale:3.9.1@sha256:a33c17755a9fbec564c2b7fc2b3cf501ad359bf48fb4ab307fc71a91170379be";
           autoStart = true;
           ports = [ "127.0.0.1:5232:5232" ];
           volumes = [
