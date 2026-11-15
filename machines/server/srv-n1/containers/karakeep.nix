@@ -8,7 +8,7 @@
       networks.karakeep = { };
 
       containers.karakeep = {
-        image = "ghcr.io/karakeep-app/karakeep:release@sha256:69ae5315c618b7c14c1af3e34c6e211acdb231793af424ecd1cab0b70691d987";
+        image = "ghcr.io/karakeep-app/karakeep:release@sha256:6f7d32ef296ddf1fc7c67ff56b8a201b7006a6a47b92b202afee1338841b353d";
         autoStart = true;
         ports = [ "127.0.0.1:3000:3000" ];
         volumes = [ "/var/lib/karakeep/data:/data:Z" ];
