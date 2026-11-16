@@ -41,7 +41,7 @@
       };
 
       containers.karakeep-chrome = {
-        image = "ghcr.io/karakeep-app/karakeep-chrome:latest@sha256:6c80ed470871bb8c129dc58692ca1714cddbc1392faad3ebf59aecd2e6e58eac";
+        image = "ghcr.io/karakeep-app/karakeep-chrome:latest@sha256:00fb4fa9c37aa74c58e74d0bdd16c4e3b81dddb5f264917c879f9579c3b3ad95";
         autoStart = true;
         network = "karakeep.network";
         networkAlias = [ "chrome" ];
