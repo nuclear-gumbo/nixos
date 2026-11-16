@@ -8,7 +8,7 @@
         enable = true;
 
         containers.pocket-id = {
-          image = "ghcr.io/pocket-id/pocket-id:v2-distroless@sha256:a21166a4eb513d2ffcbf815398480998d996a9e719cfba029395517658626f9e";
+          image = "ghcr.io/pocket-id/pocket-id:v2-distroless@sha256:6a0045a89b80fa6624c091786e7be132a4dde880ca64727a6b019c056b091982";
           autoStart = true;
           userNS = "keep-id:uid=65532,gid=65532";
           ports = [ "127.0.0.1:1411:1411" ];
