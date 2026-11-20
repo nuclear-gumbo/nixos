@@ -105,7 +105,7 @@
         enable = true;
 
         containers.outage = {
-          image = "docker.io/library/nginx:1.31-alpine@sha256:0563c36f94a6d3ec3584161b77859f740f7e20b4853f52c796a864ce6908e8ea";
+          image = "docker.io/library/nginx:1.31-alpine@sha256:fb4658584bd9a916ffb6f6e365f97c25cfdb2923801f551ea08356e695f14ff7";
           autoStart = true;
           ports = [ "127.0.0.1:8087:8087" ];
           exec = "-g \"daemon off;\"";
