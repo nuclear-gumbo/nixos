@@ -5,7 +5,7 @@
     services.podman = {
       enable = true;
       containers.ntfy = {
-        image = "docker.io/binwiederhier/ntfy:v2.38.1@sha256:038da2be5e668fee6d36a62884eea48975e1b71c29a56964e5298c1b9165a573";
+        image = "docker.io/binwiederhier/ntfy:v2.38.2@sha256:ca35419d29a834824db2440fa9320897fbe40b026c5fc2360c76ed3501b5e716";
         autoStart = true;
         exec = "serve";
         ports = [ "127.0.0.1:8084:8080" ];
